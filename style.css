@@ -1,0 +1,33 @@
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+hr {
+  color: #000;
+  border: 1px dashed !important;
+  opacity: 1 !important;
+}
+.header1 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .background {
+  background-color: #fec260;
+  bottom: 0;
+  left: 40%;
+  right: 40%;
+  top: 50%;
+}
+header .div {
+  transition: all 0.3s ease-in-out;
+}
+
+header .div:hover .background {
+  top: 0;
+}

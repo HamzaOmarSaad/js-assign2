@@ -3,13 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js</title>
+    <title>bookmark</title>
+    
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">    
     <link rel="stylesheet" href="./icons/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-<body>     
+<body class="container " style="background-color: #f7ecda"> 
+    <header class=" text-center my-5 ">
+        <div class="div position-relative">
+            <h1 class="pacifico-regular  ">Bookmarker</h1>
+            <div class="background position-absolute z-n1"></div>
+        </div>
+
+    </header>
+    <hr>
+    <main>
+        <header class=" d-flex justify-content-center header1 " >
+            <i class="fa fa-bookmark  m-2"></i>
+            <h2>Bookmark your favorite sites</h2>
+            <i class="fa fa-bookmark m-2"></i>
+        </header>
+        <section>
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-book-bookmark"></i> Site Name</label>
+        <input type="email" class="form-control" id="siteName" placeholder="bookmark name">
+        </div>
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"> <i class="fa fa-link"></i> site URL </label>
+        <input type="email" class="form-control" id="siteURL" placeholder="website URL">
+        </div>
+        <div class="mb-3 text-center">
+            <button class="btn btn-danger  px-5" id="addBookmarkBtn" onclick="add()">Submit</button>
+        </section>
+        <hr>
+    </main>
+
+    <section>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>website name</th>
+                    <th>visit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookmarkList">
+            </tbody>
+        </table>
+    </section>
+
+    
+    
     <script src="./index.js"></script>
     
     <script src="./bootstrap/bootstrap.js"></script>
